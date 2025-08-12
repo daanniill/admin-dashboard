@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: clamp(200px, 20vw, 500px) 1fr;
+    grid-template-rows: 80px 1fr;
+    margin: 0;
+}
+
+.sidebar {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: black;
+}
+
+.main_content {
+    background-color: blue;
+}
+
+.header {
+    background-color: gray;
+}
