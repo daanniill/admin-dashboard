@@ -54,11 +54,11 @@ ul {
     background-color: var(--secondary_color);
     display: grid;
     grid-template-columns: repeat(auto-fill, 50%);
-    grid-template-rows: repeat(2, max(1fr, 200px));
+    grid-template-rows: repeat(2, max(50%, 40px));
     
 }
 
-.search, .profile, .user{
+.search, .profile, .user, .functions {
     display: flex;
     justify-content: center;
     align-items: center;
