@@ -1,21 +1,27 @@
+:root {
+    --primary_color: #b0b7c0;
+    --secondary_color: #595e60;
+    --background_color: #171710;
+}
+
 body {
     display: grid;
     height: 100vh;
     grid-template-columns: clamp(200px, 20vw, 500px) 1fr;
     grid-template-rows: 80px 1fr;
     margin: 0;
+    background-color: var(--primary_color);
 }
-
 .sidebar {
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: black;
+    background-color: var(--background_color);
 }
 
 .main_content {
-    background-color: blue;
+    background-color: var(--primary_color);
 }
 
 .header {
-    background-color: gray;
+    background-color: var(--secondary_color);
 }
