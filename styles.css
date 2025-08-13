@@ -2,6 +2,7 @@
     --primary_color: #b0b7c0;
     --secondary_color: #595e60;
     --background_color: #171710;
+    --text_color: white;
 }
 
 body {
@@ -12,7 +13,22 @@ body {
     margin: 0;
     background-color: var(--primary_color);
 }
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.logo {
+    font-size: 30px;
+}
+
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: var(--text_color);
     grid-row-start: 1;
     grid-row-end: 3;
     background-color: var(--background_color);
