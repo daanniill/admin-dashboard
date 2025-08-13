@@ -5,11 +5,18 @@
     --text_color: white;
 }
 
+svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+    transform: translateY(4px);
+}
+
 body {
     display: grid;
     height: 100vh;
     grid-template-columns: clamp(200px, 20vw, 500px) 1fr;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 150px 1fr;
     margin: 0;
     background-color: var(--primary_color);
 }
@@ -22,6 +29,11 @@ ul {
 
 .logo {
     font-size: 30px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
 }
 
 .sidebar {
@@ -40,4 +52,20 @@ ul {
 
 .header {
     background-color: var(--secondary_color);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
+    grid-template-rows: repeat(2, max(1fr, 200px));
+    
+}
+
+.search, .profile, .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
 }
