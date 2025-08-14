@@ -71,13 +71,23 @@ ul {
     border-radius: 100%;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
 .card {
-    width: 400px;
-    height: 250px;
+    width: 350px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     background-color: var(--card-color);
     border-radius: 5%;
     padding: 10px;
-    margin: 10px;
 }
