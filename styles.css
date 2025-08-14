@@ -84,7 +84,7 @@ main {
 
 .card {
     width: 350px;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: var(--card-color);
