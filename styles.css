@@ -129,15 +129,15 @@ button:hover {
     padding: 25px;
     padding-bottom: 40px;
     border-left: 10px solid var(--background_color);
-    box-shadow: 5px 10px 10px 2px var(--secondary_color);
+    box-shadow: 2.5px 5px 10px 2px var(--secondary_color);
     transform: 0;
     transition: 0.5s;
 }
 
 .card:hover {
-    transform: translateX(-3px) translateY(-7px);
-    box-shadow: 10px 15px 15px 5px var(--secondary_color);
-    transition: 0.5s;
+    transform: translateX(-2.5px) translateY(-5px);
+    box-shadow: 5px 10px 15px 5px var(--secondary_color);
+    transition: 0.25s;
 }
 
 .card h5 {
@@ -150,6 +150,10 @@ button:hover {
 .card .proj_links {
     margin-top: 40px;
     text-align: right;
+}
+
+.card .desc {
+    height: 150px;
 }
 
 #search_bar {
